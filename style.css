@@ -6,29 +6,36 @@
 .container {
     height: 100vh;
     /* background-color: burlywood; */
-    
 }
 
-h1{
+.container > h1{
     color: rgba(170,13,13,0.966);
     font-size: 4rem;
+    text-align: center;
+}
 
+.container > p{
+    color: rgba(245, 29, 148, 0.966);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold
 }
 
 .container::before {
     content: "";
-    background-image: url('src/img/img-1.jpg');
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 1920px;
-    height: 1080px;
+    background-image: url('src/img/img1.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     background-position: center;
     /* background-size: cover; */
-    background-size: scale-down;
-    opacity: 60%;
+    background-size: contain;
+    /* opacity: 60%; */
     z-index: -1;
     
 }
